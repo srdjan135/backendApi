@@ -6,6 +6,7 @@ const helmet = require("helmet");
 const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
 const postsRoutes = require("./routes/posts");
 const commentsRoutes = require("./routes/comments");
@@ -58,6 +59,8 @@ app.use(chatsRoutes);
 app.use(messagesRoutes);
 
 const PORT = 3000;
+
+console.log(process.env.MONGO_DB_PW);
 
 mongoose
   .connect(
