@@ -2,6 +2,11 @@
   "name": "full-stack-social-media",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "start:server": "node app.js",
+    "dev": "nodemon app.js"
+  },
   "dependencies": {
     "bcrypt": "^6.0.0",
     "body-parser": "^2.2.0",
