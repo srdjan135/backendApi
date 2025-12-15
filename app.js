@@ -60,8 +60,6 @@ app.use(messagesRoutes);
 
 const PORT = 3000;
 
-console.log(process.env.MONGO_DB_PW);
-
 mongoose
   .connect(
     `mongodb+srv://srdjanmihic3_db_user:${process.env.MONGO_DB_PW}@cluster0.chkmvbf.mongodb.net/socialMedia`
