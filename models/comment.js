@@ -1,4 +1,3 @@
-const { Type } = require("@angular-devkit/build-angular");
 const mongoose = require("mongoose");
 
 const commentSchema = mongoose.Schema({
